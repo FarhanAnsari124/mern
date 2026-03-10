@@ -1,0 +1,22 @@
+JavaScript Arrays
+
+Creating arrays:
+let fruits = ["apple", "banana", "orange"];
+let numbers = new Array(1, 2, 3);
+
+Accessing: fruits[0] // "apple"
+Length: fruits.length // 3
+
+Common methods:
+push(), pop(), shift(), unshift()
+forEach(), map(), filter(), reduce()
+indexOf(), includes(), slice(), splice()
+
+Examples:
+fruits.push("grape"); // adds to end
+fruits.pop(); // removes last
+fruits.forEach(f => console.log(f));
+
+let doubled = numbers.map(n => n * 2); // [2,4,6]
+let evens = numbers.filter(n => n % 2 === 0); // [2]
+let sum = numbers.reduce((acc, n) => acc + n, 0); // 6

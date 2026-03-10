@@ -1,0 +1,52 @@
+/* Colors */
+
+.named  { color: tomato; }
+.hex    { color: #3498db; }
+.rgb    { color: rgb(46, 204, 113); }
+.rgba   { color: rgba(231, 76, 60, 0.5); }
+.hsl    { color: hsl(270, 60%, 50%); }
+
+/* Background colors */
+body {
+  background-color: #f5f5f5;
+}
+
+/* Fonts */
+
+.font-arial {
+  font-family: Arial, sans-serif;
+}
+
+.font-google {
+  font-family: 'Roboto', sans-serif;
+}
+
+.font-serif {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Font size */
+.font-size {
+  font-size: 24px;
+}
+
+/* Font weight */
+.font-weight {
+  font-weight: bold;
+  /* values: normal, bold, 100-900 */
+}
+
+/* Font style */
+.font-style {
+  font-style: italic;
+}
+
+/* Line height */
+.line-height {
+  line-height: 2;
+}
+
+/* Letter spacing */
+.letter-spacing {
+  letter-spacing: 4px;
+}

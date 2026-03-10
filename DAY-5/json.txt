@@ -1,0 +1,35 @@
+JSON (JavaScript Object Notation)
+
+Lightweight data interchange format, easy for humans and machines.
+
+JSON syntax:
+- Data in name/value pairs
+- Keys must be double-quoted strings
+- Values can be strings, numbers, objects, arrays, booleans, null
+
+Example:
+{
+    "name": "John",
+    "age": 30,
+    "isStudent": false,
+    "courses": ["math", "science"],
+    "address": {
+        "city": "New York",
+        "zip": "10001"
+    }
+}
+
+JavaScript methods:
+JSON.parse() - convert JSON string to JavaScript object
+JSON.stringify() - convert JavaScript object to JSON string
+
+Examples:
+const jsonStr = '{"name":"Alice","age":25}';
+const obj = JSON.parse(jsonStr);
+console.log(obj.name); // Alice
+
+const person = { name: "Bob", age: 40 };
+const json = JSON.stringify(person);
+console.log(json); // '{"name":"Bob","age":40}'
+
+Note: Functions, undefined, and symbols are not valid JSON values.

@@ -1,0 +1,34 @@
+Async/Await
+
+Syntactic sugar over Promises, makes asynchronous code look synchronous.
+
+async function always returns a Promise.
+await pauses execution until the Promise settles.
+
+Basic example:
+async function fetchData() {
+    try {
+        const response = await fetch('https://api.example.com/data');
+        const data = await response.json();
+        console.log(data);
+    } catch (error) {
+        console.error('Error:', error);
+    }
+}
+fetchData();
+
+Using with Promise.all:
+async function fetchMultiple() {
+    const [users, posts] = await Promise.all([
+        fetch('/users').then(r => r.json()),
+        fetch('/posts').then(r => r.json())
+    ]);
+    console.log(users, posts);
+}
+
+Arrow function async:
+const getData = async () => {
+    return await someAsyncFunction();
+};
+
+Note: await can only be used inside an async function (except in top-level modules).

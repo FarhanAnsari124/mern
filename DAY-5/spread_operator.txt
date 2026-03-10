@@ -1,0 +1,28 @@
+Spread Operator (...)
+
+Expand arrays, objects, or function arguments.
+
+Spread with arrays:
+const arr1 = [1, 2, 3];
+const arr2 = [4, 5, 6];
+const combined = [...arr1, ...arr2]; // [1,2,3,4,5,6]
+
+// Copy array
+const copy = [...arr1];
+
+Spread with objects (ES2018):
+const obj1 = { a: 1, b: 2 };
+const obj2 = { c: 3, ...obj1 }; // { c:3, a:1, b:2 }
+
+// Merge objects (later properties override)
+const merged = { ...obj1, ...obj2 };
+
+Spread in function calls:
+const numbers = [10, 20, 30];
+console.log(Math.max(...numbers)); // 30
+
+Rest parameter (collects remaining arguments):
+function sum(...args) {
+    return args.reduce((acc, n) => acc + n, 0);
+}
+console.log(sum(1,2,3,4)); // 10

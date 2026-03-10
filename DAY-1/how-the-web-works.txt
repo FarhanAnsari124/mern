@@ -1,0 +1,32 @@
+HOW THE WEB WORKS
+=================
+
+Browser --> sends request --> Server
+Server  --> sends response --> Browser
+
+HTTP Methods:
+  GET    - fetch data
+  POST   - send data
+  PUT    - update data
+  DELETE - delete data
+
+HTTP Status Codes:
+  200 - OK
+  404 - Not Found
+  500 - Server Error
+
+URL Parts:
+  https://www.example.com/page?name=John
+
+  https        = protocol
+  www          = subdomain
+  example.com  = domain
+  /page        = path
+  ?name=John   = query string
+
+Steps when you open a website:
+  1. Type URL in browser
+  2. Browser asks DNS for IP address
+  3. Browser sends HTTP request to server
+  4. Server sends back HTML/CSS/JS files
+  5. Browser displays the page

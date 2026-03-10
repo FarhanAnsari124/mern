@@ -1,0 +1,32 @@
+TAGS AND ATTRIBUTES
+===================
+
+Tag syntax:
+  <tagname> content </tagname>
+
+Self-closing tags (no closing tag needed):
+  <br>
+  <hr>
+  <img>
+  <input>
+
+Attribute syntax:
+  <tagname attribute="value"> content </tagname>
+
+Common attributes:
+  id        = unique name for one element
+  class     = shared name for multiple elements
+  style     = inline CSS
+  href      = link destination (used in <a>)
+  src       = file path (used in <img>)
+  alt       = alternate text (used in <img>)
+  type      = input type (used in <input>)
+  name      = field name sent with form
+  value     = default value
+  placeholder = hint text inside input
+
+Boolean attributes (no value needed):
+  required
+  disabled
+  checked
+  readonly

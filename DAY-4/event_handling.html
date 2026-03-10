@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Handling</title>
+</head>
+<body>
+    <button id="clickBtn">Click Me</button>
+    <button id="hoverBtn">Hover Me</button>
+    <input type="text" id="inputField" placeholder="Type something">
+    <p id="output"></p>
+
+    <script>
+        // Click event
+        document.getElementById("clickBtn").addEventListener("click", function() {
+            alert("Button clicked!");
+        });
+
+        // Mouseover event
+        document.getElementById("hoverBtn").addEventListener("mouseover", function() {
+            this.style.backgroundColor = "yellow";
+        });
+        document.getElementById("hoverBtn").addEventListener("mouseout", function() {
+            this.style.backgroundColor = "";
+        });
+
+        // Input event
+        document.getElementById("inputField").addEventListener("input", function(e) {
+            document.getElementById("output").textContent = "You typed: " + e.target.value;
+        });
+    </script>
+</body>
+</html>

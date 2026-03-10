@@ -1,0 +1,14 @@
+Mobile-First Approach
+
+Mobile-first approach is a design and development strategy where you start styling your website for the smallest screen (mobile) first, then progressively enhance it for larger screens (tablets, desktops) using media queries.
+
+Benefits:
+- Ensures core content and functionality work on all devices.
+- Encourages simpler, faster-loading designs.
+- Aligns with modern web usage (majority of traffic is mobile).
+
+Example workflow:
+1. Write base CSS for mobile (single column, touch-friendly buttons).
+2. Use min-width media queries to add styles for larger screens (e.g., multi-column layouts, larger fonts).
+
+This contrasts with "desktop-first" where you start with large screens and use max-width queries to scale down.

@@ -1,0 +1,21 @@
+Variables in JavaScript
+
+Variables are containers for storing data values.
+
+Declaring variables:
+- var (old, function-scoped)
+- let (block-scoped, can be reassigned)
+- const (block-scoped, cannot be reassigned)
+
+Examples:
+let name = "John";
+const age = 30;
+var isStudent = false;
+
+console.log(name); // John
+console.log(age);  // 30
+
+Naming rules:
+- Must start with a letter, _ or $
+- Case-sensitive
+- Cannot use reserved keywords

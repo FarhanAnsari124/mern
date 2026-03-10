@@ -1,0 +1,34 @@
+Promises
+
+A Promise represents a value that may be available now, later, or never.
+
+States: pending, fulfilled, rejected
+
+Creating a Promise:
+const myPromise = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        const success = true;
+        if (success) {
+            resolve('Data received');
+        } else {
+            reject('Error occurred');
+        }
+    }, 2000);
+});
+
+Consuming a Promise:
+myPromise
+    .then(data => console.log('Success:', data))
+    .catch(error => console.error('Error:', error))
+    .finally(() => console.log('Promise settled'));
+
+Chaining Promises:
+fetchUser()
+    .then(user => fetchPosts(user.id))
+    .then(posts => console.log(posts))
+    .catch(err => console.error(err));
+
+Promise methods:
+Promise.all([promise1, promise2]) // waits for all to resolve
+Promise.race([promise1, promise2]) // settles with first settled
+Promise.allSettled([...]) // waits for all to settle (fulfilled/rejected)

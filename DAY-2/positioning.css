@@ -1,0 +1,75 @@
+/* static — default, top/left/right/bottom have no effect */
+.static-box {
+  position: static;
+  background-color: lightblue;
+  padding: 10px;
+  width: 150px;
+}
+
+/* relative — moves from its own normal position */
+.relative-box {
+  position: relative;
+  top: 10px;
+  left: 30px;
+  background-color: lightgreen;
+  padding: 10px;
+  width: 150px;
+}
+
+/* absolute — positioned relative to nearest parent with position set */
+.parent {
+  position: relative;
+  width: 300px;
+  height: 100px;
+  background-color: #eee;
+  border: 1px solid gray;
+}
+
+.absolute-box {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: lightcoral;
+  padding: 8px;
+}
+
+/* fixed — stays fixed on screen (doesn't move on scroll) */
+.fixed-box {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: orange;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+/* sticky — normal until it hits top, then sticks */
+.sticky-box {
+  position: sticky;
+  top: 0;
+  background-color: lightyellow;
+  padding: 10px;
+  border: 1px solid gray;
+}
+
+/* z-index — controls stacking order (higher = on top) */
+.z-box {
+  position: relative;
+  width: 150px;
+  height: 60px;
+  padding: 10px;
+}
+
+.z-back {
+  background-color: lightblue;
+  z-index: 1;
+  top: 20px;
+  left: 0;
+}
+
+.z-front {
+  background-color: lightcoral;
+  z-index: 2;
+  top: -20px;
+  left: 40px;
+}

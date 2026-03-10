@@ -1,0 +1,37 @@
+JavaScript Loops
+
+for, while, do...while
+for...in (object properties)
+for...of (iterable values)
+
+Examples:
+// for
+for (let i = 0; i < 5; i++) {
+    console.log(i); // 0 1 2 3 4
+}
+
+// while
+let j = 0;
+while (j < 5) {
+    console.log(j);
+    j++;
+}
+
+// do...while
+let k = 0;
+do {
+    console.log(k);
+    k++;
+} while (k < 5);
+
+// for...in (object)
+let person = { name: "Alice", age: 25 };
+for (let key in person) {
+    console.log(key, person[key]); // name Alice, age 25
+}
+
+// for...of (array)
+let colors = ["red", "green", "blue"];
+for (let color of colors) {
+    console.log(color); // red, green, blue
+}

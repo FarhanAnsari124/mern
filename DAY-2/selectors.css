@@ -1,0 +1,62 @@
+/* Element selector */
+p {
+  color: #333;
+}
+
+/* Class selector */
+.box {
+  background-color: lightblue;
+  padding: 5px;
+}
+
+/* ID selector */
+#unique {
+  color: red;
+}
+
+/* Descendant selector (p inside .parent) */
+.parent p {
+  color: purple;
+}
+
+/* Direct child selector */
+.parent > span {
+  color: orange;
+}
+
+/* Pseudo-class: hover */
+a:hover {
+  color: red;
+  text-decoration: none;
+}
+
+/* Pseudo-class: focus */
+input:focus {
+  border: 2px solid blue;
+  outline: none;
+}
+
+/* Multiple classes */
+.box.special {
+  border: 2px solid green;
+}
+
+/* :first-child */
+li:first-child {
+  font-weight: bold;
+}
+
+/* :last-child */
+li:last-child {
+  color: gray;
+}
+
+/* :nth-child */
+li:nth-child(2) {
+  color: blue;
+}
+
+/* Attribute selector */
+a[href^="https"] {
+  color: green;
+}

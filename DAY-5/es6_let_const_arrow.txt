@@ -1,0 +1,36 @@
+ES6: let, const, and Arrow Functions
+
+let and const (block-scoped) vs var (function-scoped):
+- let: can be reassigned
+- const: cannot be reassigned (but object properties can be modified)
+
+Examples:
+let x = 10;
+x = 20; // OK
+
+const y = 30;
+// y = 40; // Error
+
+const person = { name: 'John' };
+person.name = 'Jane'; // Allowed (object mutated)
+
+Arrow functions: shorter syntax, no own `this`, `arguments`
+// Traditional
+function add(a, b) {
+    return a + b;
+}
+
+// Arrow
+const add = (a, b) => a + b;
+
+// Single parameter, no parentheses needed
+const square = x => x * x;
+
+// No parameters
+const hello = () => console.log('Hello');
+
+// Block body (need explicit return)
+const sum = (a, b) => {
+    let result = a + b;
+    return result;
+};

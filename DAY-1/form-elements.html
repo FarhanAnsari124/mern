@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Elements</title>
+</head>
+<body>
+
+  <form action="/submit" method="POST">
+
+    <!-- Text input -->
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name">
+    <br>
+
+    <!-- Email input -->
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email">
+    <br>
+
+    <!-- Password input -->
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password">
+    <br>
+
+    <!-- Textarea -->
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="4" cols="40"></textarea>
+    <br>
+
+    <!-- Dropdown -->
+    <label for="city">City:</label>
+    <select id="city" name="city">
+      <option value="">Select city</option>
+      <option value="mumbai">Mumbai</option>
+      <option value="delhi">Delhi</option>
+      <option value="bangalore">Bangalore</option>
+    </select>
+    <br>
+
+    <!-- Checkbox -->
+    <input type="checkbox" id="html" name="skills" value="html">
+    <label for="html">HTML</label>
+
+    <input type="checkbox" id="css" name="skills" value="css">
+    <label for="css">CSS</label>
+    <br>
+
+    <!-- Radio buttons -->
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label>
+
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label>
+    <br>
+
+    <!-- Buttons -->
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+
+  </form>
+
+</body>
+</html>

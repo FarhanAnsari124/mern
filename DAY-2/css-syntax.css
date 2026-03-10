@@ -1,0 +1,43 @@
+/* CSS Syntax */
+
+/* selector { property: value; } */
+
+/* Element selector */
+h1 {
+  color: blue;
+}
+
+/* Class selector */
+.highlight {
+  background-color: yellow;
+}
+
+/* ID selector */
+#intro {
+  font-size: 18px;
+}
+
+/* Multiple selectors */
+h1, h2, h3 {
+  font-family: Arial;
+}
+
+/* Descendant selector */
+p span {
+  font-weight: bold;
+}
+
+/* Child selector */
+body > h1 {
+  text-align: center;
+}
+
+/* Pseudo-class */
+p:hover {
+  color: green;
+}
+
+/* Pseudo-element */
+p::first-letter {
+  font-size: 24px;
+}

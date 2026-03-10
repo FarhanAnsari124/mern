@@ -1,0 +1,31 @@
+JavaScript Objects
+
+Object literal:
+let person = {
+    firstName: "John",
+    lastName: "Doe",
+    age: 30,
+    fullName: function() {
+        return this.firstName + " " + this.lastName;
+    }
+};
+
+Access properties:
+person.firstName; // "John"
+person["lastName"]; // "Doe"
+
+Add/update:
+person.city = "New York";
+
+Delete:
+delete person.age;
+
+Loop through properties:
+for (let key in person) {
+    console.log(key, person[key]);
+}
+
+Object methods:
+Object.keys(person) // ["firstName", "lastName", ...]
+Object.values(person) // ["John", "Doe", ...]
+Object.entries(person) // [["firstName","John"], ...]

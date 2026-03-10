@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transitions Basic</title>
+    <style>
+        .box {
+            width: 150px;
+            height: 150px;
+            background-color: #3498db;
+            margin: 50px auto;
+            transition: background-color 0.5s ease, transform 0.5s ease;
+        }
+        .box:hover {
+            background-color: #e74c3c;
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <h2>Hover over the box to see transition</h2>
+    <div class="box"></div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Positioning</title>
+  <link rel="stylesheet" href="positioning.css">
+</head>
+<body>
+
+  <h3>static (default)</h3>
+  <div class="static-box">Static</div>
+
+  <h3>relative (moves relative to its normal position)</h3>
+  <div class="relative-box">Relative</div>
+
+  <h3>absolute (relative to nearest positioned parent)</h3>
+  <div class="parent">
+    Parent
+    <div class="absolute-box">Absolute</div>
+  </div>
+
+  <h3>fixed (stays in same spot on screen while scrolling)</h3>
+  <div class="fixed-box">Fixed</div>
+
+  <h3>sticky (normal until scroll, then sticks)</h3>
+  <div class="sticky-box">Sticky</div>
+
+  <h3>z-index (which element appears on top)</h3>
+  <div class="z-box z-back">z-index: 1</div>
+  <div class="z-box z-front">z-index: 2 (on top)</div>
+
+  <!-- extra content for scroll demo -->
+  <div style="height: 600px;"></div>
+
+</body>
+</html>

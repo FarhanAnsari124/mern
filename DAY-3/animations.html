@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations Basic</title>
+    <style>
+        .animated-box {
+            width: 150px;
+            height: 150px;
+            background-color: #f39c12;
+            margin: 50px auto;
+            animation: bounce 2s infinite;
+        }
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-50px);
+                background-color: #8e44ad;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2>Simple Bounce Animation</h2>
+    <div class="animated-box"></div>
+</body>
+</html>

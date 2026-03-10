@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Validation</title>
+</head>
+<body>
+
+  <form action="/submit" method="POST">
+
+    <!-- required -->
+    <input type="text" name="name" placeholder="Name" required>
+    <br>
+
+    <!-- minlength and maxlength -->
+    <input type="text" name="username" placeholder="Username (3-10 chars)" minlength="3" maxlength="10">
+    <br>
+
+    <!-- min and max for numbers -->
+    <input type="number" name="age" placeholder="Age (18-60)" min="18" max="60">
+    <br>
+
+    <!-- pattern -->
+    <input type="tel" name="phone" placeholder="Phone (10 digits)"
+           pattern="[0-9]{10}" title="Enter 10 digit number">
+    <br>
+
+    <!-- email auto-validates format -->
+    <input type="email" name="email" placeholder="Email" required>
+    <br>
+
+    <!-- readonly -->
+    <input type="text" name="code" value="REF123" readonly>
+    <br>
+
+    <!-- disabled -->
+    <input type="text" name="locked" value="Cannot edit" disabled>
+    <br>
+
+    <button type="submit">Submit</button>
+
+  </form>
+
+</body>
+</html>

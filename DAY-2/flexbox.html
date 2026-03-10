@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flexbox</title>
+  <link rel="stylesheet" href="flexbox.css">
+</head>
+<body>
+
+  <h3>flex-direction: row (default)</h3>
+  <div class="flex row">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+  </div>
+
+  <h3>flex-direction: column</h3>
+  <div class="flex column">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+  </div>
+
+  <h3>justify-content (horizontal alignment)</h3>
+  <div class="flex jc-start">    <div class="item">1</div><div class="item">2</div><div class="item">3</div> </div>
+  <div class="flex jc-center">   <div class="item">1</div><div class="item">2</div><div class="item">3</div> </div>
+  <div class="flex jc-end">      <div class="item">1</div><div class="item">2</div><div class="item">3</div> </div>
+  <div class="flex jc-between">  <div class="item">1</div><div class="item">2</div><div class="item">3</div> </div>
+  <div class="flex jc-around">   <div class="item">1</div><div class="item">2</div><div class="item">3</div> </div>
+  <div class="flex jc-evenly">   <div class="item">1</div><div class="item">2</div><div class="item">3</div> </div>
+
+  <h3>align-items (vertical alignment)</h3>
+  <div class="flex ai-start tall">   <div class="item">1</div><div class="item">2</div><div class="item">3</div> </div>
+  <div class="flex ai-center tall">  <div class="item">1</div><div class="item">2</div><div class="item">3</div> </div>
+  <div class="flex ai-end tall">     <div class="item">1</div><div class="item">2</div><div class="item">3</div> </div>
+
+  <h3>flex-wrap</h3>
+  <div class="flex wrap">
+    <div class="item">1</div><div class="item">2</div><div class="item">3</div>
+    <div class="item">4</div><div class="item">5</div><div class="item">6</div>
+  </div>
+
+  <h3>flex-grow on items</h3>
+  <div class="flex grow-demo">
+    <div class="item grow-1">grow 1</div>
+    <div class="item grow-2">grow 2</div>
+    <div class="item grow-1">grow 1</div>
+  </div>
+
+  <h3>gap between items</h3>
+  <div class="flex gap-demo">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+  </div>
+
+</body>
+</html>

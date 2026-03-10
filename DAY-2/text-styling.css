@@ -1,0 +1,34 @@
+/* Text Alignment */
+.align-left    { text-align: left; }
+.align-center  { text-align: center; }
+.align-right   { text-align: right; }
+.align-justify { text-align: justify; }
+
+/* Text Transform */
+.uppercase  { text-transform: uppercase; }
+.lowercase  { text-transform: lowercase; }
+.capitalize { text-transform: capitalize; }
+
+/* Text Decoration */
+.underline     { text-decoration: underline; }
+.overline      { text-decoration: overline; }
+.line-through  { text-decoration: line-through; }
+.no-decoration a { text-decoration: none; color: blue; }
+
+/* Text Indent */
+.indent { text-indent: 40px; }
+
+/* Text Shadow */
+.shadow { text-shadow: 2px 2px 4px gray; }
+
+/* Word Spacing */
+.spacing { word-spacing: 15px; }
+
+/* White Space - prevent wrapping */
+.nowrap {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 300px;
+  border: 1px solid #ccc;
+}

@@ -1,0 +1,24 @@
+JavaScript Functions
+
+Function declaration:
+function greet(name) {
+    return "Hello " + name;
+}
+
+Function expression:
+const greet = function(name) {
+    return "Hello " + name;
+};
+
+Arrow function (ES6):
+const greet = (name) => "Hello " + name;
+
+Default parameters:
+function multiply(a, b = 1) {
+    return a * b;
+}
+
+Calling:
+console.log(greet("John")); // Hello John
+console.log(multiply(5)); // 5
+console.log(multiply(5, 2)); // 10

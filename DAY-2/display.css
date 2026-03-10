@@ -1,0 +1,38 @@
+/* block: full width, new line each time */
+.block-demo {
+  display: block;
+  background-color: lightblue;
+  width: 150px;
+  margin-bottom: 5px;
+  padding: 5px;
+}
+
+/* inline: sits in line, width/height don't apply */
+.inline-demo {
+  display: inline;
+  background-color: lightgreen;
+  padding: 5px;
+  /* width: 100px;  <-- this has no effect on inline */
+}
+
+/* inline-block: sits in line, but width/height work */
+.inline-block-demo {
+  display: inline-block;
+  background-color: lightyellow;
+  width: 80px;
+  height: 60px;
+  border: 1px solid gray;
+  text-align: center;
+  line-height: 60px;
+  margin: 2px;
+}
+
+/* none: removes element from page completely */
+.hidden {
+  display: none;
+}
+
+/* visibility hidden: invisible but still takes up space */
+.invisible {
+  visibility: hidden;
+}

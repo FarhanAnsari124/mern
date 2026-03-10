@@ -1,0 +1,32 @@
+JavaScript Data Types
+
+Primitive types:
+- string: "Hello", 'World'
+- number: 42, 3.14
+- boolean: true, false
+- undefined: variable declared but not assigned
+- null: intentional absence of value
+- symbol (ES6): unique identifier
+- bigint: large integers
+
+Reference types:
+- object: { name: "John", age: 30 }
+- array: [1, 2, 3]
+- function: function() {}
+
+Examples:
+let str = "text";
+let num = 100;
+let bool = true;
+let notDefined;
+let empty = null;
+let obj = { key: "value" };
+let arr = [1, 2, 3];
+
+console.log(typeof str); // string
+console.log(typeof num); // number
+console.log(typeof bool); // boolean
+console.log(typeof notDefined); // undefined
+console.log(typeof empty); // object (quirk)
+console.log(typeof obj); // object
+console.log(Array.isArray(arr)); // true
