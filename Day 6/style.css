@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #222;
+}
+.card{
+    width: 90%;
+    max-width: 470px;
+    background: linear-gradient(135deg , #00feba , #5b548a);
+    color: #fff;
+    margin: 100px auto 0;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.search{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.input{
+  height: 60px;
+  padding: 10px 25px;
+  border-radius: 30px;
+  border: 0;
+  outline: 0;
+  background: #ebfffc;
+  color: #555;
+  flex: 1;
+  margin-right: 16px;
+  font-size: 18px;
+}
+.search button{
+  border: 0;
+  outline: 0;
+  background: #ebfffc; 
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  cursor:pointer; 
+}
+.search button img{
+  width: 16px;
+}
+.temp{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.temp img{
+  width: 50%;
+  height: 50%;
+}
+.temp h1{
+  font-size: 65px;
+  font-weight: 500;
+}
+.temp h2{
+  font-size: 50px;
+  font-weight: 300;
+}
+.wind{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.humidity{
+  width: 50%;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  gap: 5px;
+}
+.humidity img{
+  width: 50px;
+  height: 50px;
+}
+.humidityVals h1{
+  font-size: 25px;
+  font-weight: 300;
+  line-height: 28px;
+}
+.humidityVals span{
+  font-size: 19px;
+}
+.speed{
+  width: 50%;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  gap: 5px;
+}
+.speedVals h1{
+  font-size: 25px;
+  font-weight: 300;
+}
+.speedVals span{
+  font-size: 19px;
+}
+.speed img{
+  width: 50px;
+  height: 50px;
+}
